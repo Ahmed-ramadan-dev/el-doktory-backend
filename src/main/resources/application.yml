@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: El-Doktory
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://doctory-db-ahmed-714e.e.aivencloud.com:20521/defaultdb?ssl-mode=REQUIRED
+    username: avnadmin
+    password: AVNS_Pj-sBMu3Dzb51DnilGi
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    # امسح الجزء بتاع الـ properties اللي كان فيه MySQL8Dialect
+    # Hibernate 7 هيعرف النوع لوحده من الـ URL
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+server:
+  port: 8071
+
+cloudinary:
+  cloud_name: dq7of2fnx
+  api_key: "365364268771747"
+  api_secret: g2XIkSaLvwtS04KrCyF55eoLnYo
