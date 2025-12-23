@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://doctory-db-ahmed-714e.e.aivencloud.com:20521/defaultdb?ssl-mode=REQUIRED
     username: avnadmin
-    password: AVNS_Pj-sBMu3Dzb51DnilGi
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
