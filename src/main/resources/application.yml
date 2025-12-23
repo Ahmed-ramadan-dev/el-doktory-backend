@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://doctory-db-ahmed-714e.e.aivencloud.com:20521/defaultdb?ssl-mode=REQUIRED
     username: avnadmin
-    password: ${DB_PASSWORD}
+    password: AVNS_Pj-sBMu3Dzb51DnilGi
 
   jpa:
     hibernate:
@@ -21,7 +21,7 @@ spring:
       max-request-size: 100MB
 
 server:
-  port: 8071
+  port: 8080
 
 cloudinary:
   cloud_name: dq7of2fnx
