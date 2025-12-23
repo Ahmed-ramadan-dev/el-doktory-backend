@@ -28,7 +28,7 @@ public class PatientServiceImpl implements PatientService {
         Patients patient = patientMapper.toPatients(dto);
         patientRepo.save(patient);
 
-        String frontendUrl = "http://localhost:5173/" + patient.getId();
+        String frontendUrl = "https://el-doctory.vercel.app/" + patient.getId();
 
         String qrBase64;
         try {
