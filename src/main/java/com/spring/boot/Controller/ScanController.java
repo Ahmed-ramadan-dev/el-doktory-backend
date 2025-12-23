@@ -18,7 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("api/scan/")
 public class ScanController {
