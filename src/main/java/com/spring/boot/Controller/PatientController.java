@@ -26,7 +26,7 @@ public class PatientController {
         this.patientService = patientService;
     }
 
-    @PostMapping("/api/eldoctory/safepatient/add")
+    @PostMapping("api/eldoctory/safepatient/add")
     @Operation(
             summary = "إضافة مريض جديد",
             description = "ينشئ مريض جديد ويولد له QR code",
@@ -46,7 +46,7 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @PutMapping("/api/eldoctory/safepatient/update")
+    @PutMapping("api/eldoctory/safepatient/update")
     @Operation(
             summary = "تحديث بيانات مريض",
             description = "يتم تحديث بيانات المريض باستخدام المعرف",
@@ -68,7 +68,7 @@ public class PatientController {
                 .body("تم تحديث بيانات المريض بنجاح");
     }
 
-    @DeleteMapping("/api/eldoctory/safepatient/delete/{id}")
+    @DeleteMapping("api/eldoctory/safepatient/delete/{id}")
     @Operation(
             summary = "حذف مريض",
             description = "يحذف المريض المحدد بواسطة المعرف",
@@ -88,7 +88,7 @@ public class PatientController {
                 .body("تم حذف المريض بنجاح");
     }
 
-    @GetMapping("/api/eldoctory/safepatient/getAll/")
+    @GetMapping("api/eldoctory/safepatient/getAll/")
     @Operation(
             summary = "جلب كل المرضى",
             description = "يعرض قائمة بكل المرضى الموجودين",
